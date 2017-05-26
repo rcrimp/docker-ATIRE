@@ -1,0 +1,3 @@
+[submodule "atire"]
+	path = atire
+	url = git://github.com/snapbug/atire.git
