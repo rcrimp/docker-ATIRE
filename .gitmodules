@@ -1,0 +1,3 @@
+[submodule "atire"]
+	path = atire
+	url = https://github.com/rcrimp/atire
