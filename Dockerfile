@@ -7,6 +7,7 @@ RUN apt-get update && \
 	g++ \
 	less \
 	vim \
-	git \
+	git
 
 VOLUME /atire
+VOLUME /data

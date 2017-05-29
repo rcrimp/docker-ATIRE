@@ -25,16 +25,17 @@ Run a tty in a temporary instance of the container
 ```
 docker run --rm -v ./atire/:/atire -i -t docker-atire /bin/bash
 # I have issues getting '.' (cwd) working under win7, but '~' works fine...
-docker run --rm -v ~/Documents/GitHub/docker-ATIRE/atire:/atire -i -t docker-atire /bin/bash
+docker run --rm -v ~/Documents/GitHub/docker-ATIRE/atire:/atire -v ~/Desktop/MSc\ IR/data:/data -i -t docker-atire /bin/bash
+
 ```
 
 Index a document collection
 ```
-# TODO
+./bin/index -rtrec -sa /data/wsj.xml
 ```
 
 Run search engine server instance
 ```
-# TODO
+./bin/atire
 ```
 
