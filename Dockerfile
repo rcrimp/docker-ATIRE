@@ -1,6 +1,12 @@
 FROM ubuntu
 
-RUN apt-get update
-RUN apt-get install -y vim
+RUN apt-get update && \
+	apt-get install -y \
+	make \
+	gcc \
+	g++ \
+	less \
+	vim \
+	git \
 
-VOLUME ~/test-dir
+VOLUME /atire
